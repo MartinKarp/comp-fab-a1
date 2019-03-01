@@ -12,6 +12,8 @@ For a more readable version of this document, see [Readme.pdf](Readme.pdf) or [R
 
 **Issues and questions:** Please use the [issue tracker](https://github.com/computational-robotics-lab/comp-fab-a1) of the main repository if you have any general issues or questions about this assignment. You can also use the issue tracker of your personal repository or [email me](mailto:moritzge@inf.ethz.ch).
 
+> Note: The bug in github classroom was fixed. This repository should be automatically imported into your private one.
+
 ## Assignment
 
 In this first assignment, you will implement and compare various strategies to solve the unconstrained minimization problem
@@ -118,15 +120,6 @@ Make sure you install the following:
 ### Building the code
 
 On Windows, you can use Git Bash to perform the steps mentioned below.
-
-> Note: There seems to be a github classroom bug, where the starter code is not imported. Thus, cancel the import process and import the code yourself, like so:
-> After step 1: 
-> 
-> `cd comp-fab-a0-XXX`
-> 
-> `git pull https://github.com/computational-robotics-lab/comp-fab-a0` 
-> 
-> `git submodule update --init --recursive`
 
 1. Clone this repository and load submodules:
     ```
