@@ -57,11 +57,15 @@ The file `src/optLib/GradientDescentMinimizer.h` contains three classes:
 
 ### 3. Newton's method
 
-**Task:** Implement Newton's method with global Hessian regularization.
+**Task:** Implement Newton's method with global Hessian regularization, where we take a step $dx$ by solving
+$$
+\left(\nabla^2f(x_i) + r\mathbf I\right)dx = -\nabla f(x_i)
+$$
+$r > 0$ is called the global regularizer and $\mathbf I$ is the identity matrix.
 
 **Relevant code:**
 
-In the file `src/optLib/NewtonFunctionMinimizer.h` , implement the method `computeSearchDirection(...)` to compute the search direction according to Newton's method. The `ObjectiveFunction` has a method `getHessian(...)` that computes the Hessian.
+In the file `src/optLib/NewtonFunctionMinimizer.h` , implement the method `computeSearchDirection(...)` to compute the search direction according to Newton's method. The `ObjectiveFunction` has a method `getHessian(...)` that computes the Hessian. Use the member `reg` for the value of $r$.
 
 **Hint:** The Eigen library provides various solvers to solve a linear system $Ax=b$, where A is a sparse matrix. Take a look at the example in the documentation [here](https://eigen.tuxfamily.org/dox/group__TopicSparseSystems.html). Thus, to solve $Ax=b$, you could use e.g. this:
 
