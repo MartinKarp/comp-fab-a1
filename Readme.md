@@ -79,7 +79,7 @@ x = solver.solve(b);
 
 Now that you have implemented different optimization methods, let's compare and try them out on different functions. Give an answer to the following questions. Please write your answers below the questions, and don't forget to commit and push!
 
-1. Let's look at the Gradient Descent with fixed step size and the quadratic function $f(x) = a^Txa + b^Tx + c$. 
+1. Let's look at the Gradient Descent with fixed step size and the quadratic function $f(x) = x^Tax + b^Tx + c$. 
    What is the maximum step size, such that Gradient Descent with fixed step size still converges and finds the minimum? Can you give an explanation for this particular value of the step size? What happens when we change $a$, $b$ or $c$?
 
    *your answer*
